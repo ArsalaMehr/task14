@@ -1,34 +1,172 @@
 /* write your styles here */
-body
-{
-    background-image: url('images/floral.png');
- 
+
+body {
+  margin: 0;
 }
 
-header
+/* Marquee start */
+
+/* .marquee {
+    height: 25px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee div {
+    width: 200%;
+    height: 30px;
+  
+    position: absolute;
+    overflow: hidden;
+  
+    animation: marquee 5s linear infinite;
+  }
+  
+  .marquee span {
+    float: left;
+    width: 50%;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  } */
+main
 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  background: url('images/floral.png');
+  background-repeat: repeat;
+  background-size: fill;
+}
+marquee {
+  font-family: 'Josefin Sans', sans-serif;
+  height: 2em;
+  background-color: #ed484c;
+  color: #f1f1f1;
+  font-size: 14px;
+  font-weight: bolder;
+  padding-top: 1%;
 }
 
-.logo
-{
-   width: 50px;
-   height: 50px; 
-   
+mark {
+  background-color: yellow;
 }
 
-ul
-{
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Marquee end */
+
+/* header start */
+
+header {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #4c4c4c;
+  color: #c5c5c5;
+  font-size: 16px;
 }
 
-li
-{
-    flex-basis: 20%;
+#logo {
+  padding: 8px 0 5px 10px;
+}
+
+header ul {
+  padding: 8px 0 5px 10px;
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  margin-right: 20px;
+}
+
+/* header end */
+
+/* main start */
+
+#about_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(237, 45, 49, 0.5);
+  background-size: fill;
+}
+
+#about_us h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 90px;
+  font-weight: bold;
+  font-size: 2.7em;
+}
+
+.highlight_para {
+  font-family: 'Montserrat', sans-serif;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  padding: 20px 0 20px 0;
+  max-width: 600px;
+  text-align: center;
+}
+
+#about_us button {
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  font-size: 1.5em;
+  background-color: #170d0e;
+  color: #f18d97;
+  padding: 10px 2em 10px 2em;
+  height: 2em;
+  margin-bottom: 30px;
+}
+
+#services_main {
+  padding: 10px;
+  grid-gap: 10%;
+  border: #170d0e 2px solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 9fr));
+}
+
+#services {
+  /* position: absolute; */
+  background: rgb(109, 108, 106, 0.1);
+}
+
+h2 {
+  font-family: 'Rochester', cursive;
+  text-align: center;
+  font-size: 2em;
+}
+
+#categories {
+  text-align: center;
+  border: #170d0e solid 2px;
+}
+
+#categories i {
+  color: black;
+}
+
+#services_main figcaption {
+  text-align: center;
+}
+
+/* main end */
+
+#categories h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#categories p {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+#abt_portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(135, 110, 69, 0.3);
+  background-size: fill;
 }
